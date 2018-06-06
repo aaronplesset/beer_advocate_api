@@ -1,0 +1,9 @@
+BA_Documentation
+================
+
+.. toctree::
+   :maxdepth: 4
+
+   BA
+   conf
+   setup

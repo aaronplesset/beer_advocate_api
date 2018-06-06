@@ -1,0 +1,38 @@
+BA package
+==========
+
+Submodules
+----------
+
+BA\.beer module
+---------------
+
+.. automodule:: BA.beer
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+BA\.tools module
+----------------
+
+.. automodule:: BA.tools
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+BA\.user module
+---------------
+
+.. automodule:: BA.user
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: BA
+    :members:
+    :undoc-members:
+    :show-inheritance:

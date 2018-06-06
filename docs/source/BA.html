@@ -1,0 +1,502 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>BA package &mdash; Beer Advocate API 1.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Beer Advocate API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">BA package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-BA.beer">BA.beer module</a></li>
+<li><a class="reference internal" href="#module-BA.tools">BA.tools module</a></li>
+<li><a class="reference internal" href="#module-BA.user">BA.user module</a></li>
+<li><a class="reference internal" href="#module-BA">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Beer Advocate API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>BA package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/docs/source/BA.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ba-package">
+<h1>BA package<a class="headerlink" href="#ba-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-BA.beer">
+<span id="ba-beer-module"></span><h2>BA.beer module<a class="headerlink" href="#module-BA.beer" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="BA.beer.Beer">
+<em class="property">class </em><code class="descclassname">BA.beer.</code><code class="descname">Beer</code><span class="sig-paren">(</span><em>url</em><span class="sig-paren">)</span><a class="headerlink" href="#BA.beer.Beer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Stores and retrieves data from Beer Advocate for a particular beer</p>
+<dl class="attribute">
+<dt id="BA.beer.Beer.url">
+<code class="descname">url</code><a class="headerlink" href="#BA.beer.Beer.url" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>str</em> – The full URL to the beer’s profile page</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="BA.beer.Beer.main_html">
+<code class="descname">main_html</code><a class="headerlink" href="#BA.beer.Beer.main_html" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>str</em> – HTML for beer’s profile page</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="BA.beer.Beer.info">
+<code class="descname">info</code><a class="headerlink" href="#BA.beer.Beer.info" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>dict</em> – Dictionary of beer info and stats from the beer’s profile page</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="BA.beer.Beer.last_page">
+<code class="descname">last_page</code><a class="headerlink" href="#BA.beer.Beer.last_page" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>int</em> – The page number corresponding to the last page. Used for getting all reviews</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="BA.beer.Beer.get_info">
+<code class="descname">get_info</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BA.beer.Beer.get_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>“Returns beer info and stats from the beer’s profile page</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="BA.beer.Beer.get_name">
+<code class="descname">get_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BA.beer.Beer.get_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the beer’s name</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="BA.beer.Beer.get_reviews">
+<code class="descname">get_reviews</code><span class="sig-paren">(</span><em>n_most_recent=0</em><span class="sig-paren">)</span><a class="headerlink" href="#BA.beer.Beer.get_reviews" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets beer’s reviews</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>n_most_recent is 0</strong><strong> (</strong><strong>default</strong><strong>)</strong><strong>, </strong><strong>all reviews are returned. Otherwise</strong><strong>, </strong><strong>n_most recent is rounded up to the nearest 25th and the result is the number of ratings that are returned</strong><strong>, or </strong><strong>the total number</strong><strong> (</strong><strong>whichever is smaller</strong><strong>)</strong> (<em>If</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Dictionary of all usernames and corresponding beer review</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="BA.beer.beer_search">
+<code class="descclassname">BA.beer.</code><code class="descname">beer_search</code><span class="sig-paren">(</span><em>beer_name=' '</em>, <em>first_on_list=True</em><span class="sig-paren">)</span><a class="headerlink" href="#BA.beer.beer_search" title="Permalink to this definition">¶</a></dt>
+<dd><p>Searches for beers on Beer Advocate</p>
+<p>Sometimes a search will turn up the beer’s page if it is an exact match. In this case, the function will return the URL
+corresponding to the search because it can be passed directly into a Beer object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>beer_name</strong> (<em>str</em>) – The beer to be searched.</li>
+<li><strong>first_on_list</strong> (<em>bool</em>) – If True, the functions return only the URL of the first result on the list</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li><em>str</em> – If either an exact match or first_on_list = True, a string that can be passed in to a Beer object is returned</li>
+<li><em>dict</em> – If multiple beers match and first_on_list = False, a dictionary of Beers, corresponding breweries, and</li>
+<li><em>corresponding urls are returned</em></li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-BA.tools">
+<span id="ba-tools-module"></span><h2>BA.tools module<a class="headerlink" href="#module-BA.tools" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="BA.tools.ba_parser">
+<em class="property">class </em><code class="descclassname">BA.tools.</code><code class="descname">ba_parser</code><span class="sig-paren">(</span><em>tags=['div'], attributes=['id'], vals=['item_stats', 'info_box'], save_comments=False, save_urls=False</em><span class="sig-paren">)</span><a class="headerlink" href="#BA.tools.ba_parser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">html.parser.HTMLParser</span></code></p>
+<p>Although this class may work for general HTML parsing, it was intended for parsing HTML pages on Beer Advocate</p>
+<p>After initializing ba_parser(), feed an HTML string as an argument to ba_parser.feed(). Use the ba_parser.clean_lines()
+method to remove the specified characters/strings in the method. The cleaned lines will be stored in ba_parser.lines.</p>
+<dl class="attribute">
+<dt id="BA.tools.ba_parser.lines">
+<code class="descname">lines</code><a class="headerlink" href="#BA.tools.ba_parser.lines" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>slist</em> – List of parsed HTML lines</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="BA.tools.ba_parser.comments">
+<code class="descname">comments</code><a class="headerlink" href="#BA.tools.ba_parser.comments" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>slist</em> – If save_comments = True, comments is a list of all comments parsed when the parser is recording</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="BA.tools.ba_parser.urls">
+<code class="descname">urls</code><a class="headerlink" href="#BA.tools.ba_parser.urls" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>slist</em> – If save_urls = True, urls is a list of all urls parsed when the parser is recording</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="BA.tools.ba_parser.clean_lines">
+<code class="descname">clean_lines</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#BA.tools.ba_parser.clean_lines" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Removes unwanted characters from ‘lines’ attribute</dt>
+<dd>Removes the folowing substrings from the lines:
+-‘</dd>
+</dl>
+<dl class="docutils">
+<dt>‘</dt>
+<dd>-‘      ‘
+-‘&nbsp;’
+-‘/’
+-‘,’
+These are common on the Beer Advocate pages</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="BA.tools.ba_parser.handle_comment">
+<code class="descname">handle_comment</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#BA.tools.ba_parser.handle_comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>If save_comments = True, this function saves all comments parsed while function is recording</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="BA.tools.ba_parser.handle_data">
+<code class="descname">handle_data</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#BA.tools.ba_parser.handle_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stores all lines located between tags when recording</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="BA.tools.ba_parser.handle_endtag">
+<code class="descname">handle_endtag</code><span class="sig-paren">(</span><em>tag</em><span class="sig-paren">)</span><a class="headerlink" href="#BA.tools.ba_parser.handle_endtag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handles endtags
+The parser is recording lines only if self.reading &gt; 0. If the tag is not nested, this tells the parser to stop
+recording. Otherwise, it helps keep track of the nesting.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="BA.tools.ba_parser.handle_starttag">
+<code class="descname">handle_starttag</code><span class="sig-paren">(</span><em>tag</em>, <em>attributes</em><span class="sig-paren">)</span><a class="headerlink" href="#BA.tools.ba_parser.handle_starttag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hanldes startags according to how it is specified in the parameters section of the __init__ method</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="BA.tools.is_date">
+<code class="descclassname">BA.tools.</code><code class="descname">is_date</code><span class="sig-paren">(</span><em>string</em>, <em>hyphened=False</em><span class="sig-paren">)</span><a class="headerlink" href="#BA.tools.is_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests string to see if it is a date of “%m-%d-%Y” or  “%b %d %Y” format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>string</strong> (<em>str</em>) – String to be tested</li>
+<li><strong>hyphened</strong> (<em>bool</em>) – If hyphened is true, tests string for “%m-%d-%Y” format. Otherwise, tests for “%b %d %Y” format</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Returns true if string is date of “%m-%d-%Y” or  “%b %d %Y” format, false otherwise.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="BA.tools.reg_sandwich">
+<code class="descclassname">BA.tools.</code><code class="descname">reg_sandwich</code><span class="sig-paren">(</span><em>look_behind=' '</em>, <em>look_ahead=' '</em>, <em>string=''</em><span class="sig-paren">)</span><a class="headerlink" href="#BA.tools.reg_sandwich" title="Permalink to this definition">¶</a></dt>
+<dd><p>Matches a string sandwiched between two other strings using RegEx</p>
+<p>If you think of the desired substring as sandwiched between two other strings, the look_behind (left) and look_ahead (right),
+then the desired string is the meat</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>look_behind</strong> (<em>str</em>) – The string immediately to the left of the desired substring (bottom bread in the sanwich)</li>
+<li><strong>look_ahead</strong> (<em>str</em>) – The string immediately to the right of the desired substring (top bread in the sandwich)</li>
+<li><strong>string</strong> (<em>str</em>) – The string to be searched</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Returns the <em>last</em> matched group in the paramter string according to the regular expression</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">str</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-BA.user">
+<span id="ba-user-module"></span><h2>BA.user module<a class="headerlink" href="#module-BA.user" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="BA.user.User">
+<em class="property">class </em><code class="descclassname">BA.user.</code><code class="descname">User</code><span class="sig-paren">(</span><em>username</em><span class="sig-paren">)</span><a class="headerlink" href="#BA.user.User" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Stores and retrieves data from Beer Advocate for a particular user</p>
+<dl class="attribute">
+<dt id="BA.user.User.username">
+<code class="descname">username</code><a class="headerlink" href="#BA.user.User.username" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>str</em> – The user’s username</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="BA.user.User.user_id">
+<code class="descname">user_id</code><a class="headerlink" href="#BA.user.User.user_id" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>str</em> – The user’s user_id if the user’s profile page is publice</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="BA.user.User.url">
+<code class="descname">url</code><a class="headerlink" href="#BA.user.User.url" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>str</em> – The full URL to the beer’s profile page</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="BA.user.User.reviews">
+<code class="descname">reviews</code><a class="headerlink" href="#BA.user.User.reviews" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>str</em> – Contains first page of user’s reviews</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="BA.user.User.info">
+<code class="descname">info</code><a class="headerlink" href="#BA.user.User.info" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>dict</em> – Dictionary containing user’s info if profile page is public</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="BA.user.User.get_reviews">
+<code class="descname">get_reviews</code><span class="sig-paren">(</span><em>n_most_recent=0</em><span class="sig-paren">)</span><a class="headerlink" href="#BA.user.User.get_reviews" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets reviews by users</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>n_most_recent is 0</strong><strong> (</strong><strong>default</strong><strong>)</strong><strong>, </strong><strong>all reviews are returned. Otherwise</strong><strong>, </strong><strong>n_most recent is rounded up to the nearest 50th and the result is the number of ratings that are returned</strong><strong>, or </strong><strong>the total number</strong><strong> (</strong><strong>whichever is smaller</strong><strong>)</strong> (<em>If</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The result is a list of slists, where each element is a review by the User</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-BA">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-BA" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Aaron Plesset, Sam O&#39;neil.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'1.1.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
